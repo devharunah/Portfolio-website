@@ -11,7 +11,7 @@ const AboutMe = () => {
           <div className="aspect-square w-full p-2 border border-white/20 rounded-[20px]">
             {/* <World data={kampalaPoint} globeConfig={globeConfig} /> */}
             <Image
-              src={"/images/me.webp"}
+              src="/images/me.png"
               alt={""}
               width={500}
               height={500}
