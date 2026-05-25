@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Bodoni_Moda, Roboto } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const poppins = Poppins({ 
-  weight: '700', // You can specify specific weights
-  subsets: ['latin'], 
-  variable: '--font-poppins' 
+
+const bodoniModa = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-heading",
 });
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-body",
+});
+
 export const metadata: Metadata = {
   title: "Kakooza Harunah",
-  description: "A software Developer",
-   icons: {
+  description: "Software Developer & Co-Founder",
+  icons: {
     icon: "/favicon.png",
   },
 };
@@ -21,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-   <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${bodoniModa.variable} ${roboto.variable}`}>
       <body>{children}</body>
     </html>
   );
