@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 
@@ -63,6 +64,32 @@ export default function AboutClient() {
         animate="animate"
         style={{ maxWidth: "680px" }}
       >
+        {/* Avatar */}
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.5 }}
+          style={{ marginBottom: "2rem" }}
+        >
+          <div
+            style={{
+              width: 100,
+              height: 100,
+              borderRadius: "50%",
+              overflow: "hidden",
+              flexShrink: 0,
+            }}
+          >
+            <Image
+              src="/images/harunah2026.jpeg"
+              alt="Kakooza Harunah"
+              width={100}
+              height={100}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              priority
+            />
+          </div>
+        </motion.div>
+
         {/* Hero heading */}
         <motion.div variants={fadeUp} transition={{ duration: 0.5 }}>
           <h1
