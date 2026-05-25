@@ -80,7 +80,7 @@ export default function AboutClient() {
             }}
           >
             <Image
-              src="/images/harunah2026.jpeg"
+              src="/images/harunah2025.jpg"
               alt="Kakooza Harunah"
               width={100}
               height={100}
