@@ -31,7 +31,7 @@ const building = [
   },
   {
     name: "Kawa",
-    role: "Developer",
+    role: "Software Developer",
     description:
       "A coffee marketplace connecting farmers, suppliers, cafés, and companies across the coffee industry with buyers. Built to simplify sourcing and selling around coffee.",
     href: "https://kawacoffee.app/",
@@ -126,9 +126,7 @@ export default function AboutClient() {
               Kampala, Uganda
             </span>
             , building digital products that solve real problems for real
-            communities. I work across the full stack — TypeScript, React,
-            Next.js, Node.js, PostgreSQL — and I ship end-to-end, from the
-            first design decision to the final deployment.
+            communities.
           </p>
 
           <p
@@ -303,11 +301,9 @@ export default function AboutClient() {
                     <span
                       style={{
                         fontFamily: "var(--font-body)",
-                        fontSize: "0.78rem",
+                        fontSize: "0.9rem",
                         color: "#097969",
-                        backgroundColor: "#f0faf7",
-                        padding: "0.15rem 0.55rem",
-                        borderRadius: "999px",
+                        fontStyle: "italic",
                       }}
                     >
                       {item.role}
